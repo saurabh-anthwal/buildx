@@ -23,7 +23,7 @@ const WhyChoose = () => {
       className="my-10 relative flex h-[60vh] min-h-[60vh] bg-cover bg-center"
       style={{
         backgroundImage:
-          "url(https://cdn.gamma.app/32hkwzjbtg7xlr3/generated-images/gJS0QbYIxcRuPUvh4hS4a.jpg)",
+          "url(/service-img/choose.jpeg)",
       }}
     >
       {/* Overlay for better contrast */}

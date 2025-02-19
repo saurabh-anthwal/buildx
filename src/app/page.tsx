@@ -24,12 +24,6 @@ export default function Home() {
       {/* How We Do It Section */}
       <HowWeDo />
 
-      {/* Meet Our Expert Team Section */}
-      {/* <MeetOurExpert /> */}
-
-      {/* Explore Our Solutions Section */}
-      {/* <Explore /> */}
-
     </div>
   );
 }

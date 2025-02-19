@@ -8,7 +8,7 @@ const ContactUs = () => {
   const [isConsultationOpen, setConsultationOpen] = useState(false);
 
   return (
-    <section className="container mx-auto my-16 px-6 flex flex-col md:flex-row items-center gap-12 font-body">
+    <section className="container mx-auto py-16 flex flex-col md:flex-row items-center gap-12 font-body">
       {/* Left Section */}
       <div className="w-full md:w-3/5">
         <h2 className="text-4xl font-bold text-gray-900 mb-4">Let’s Connect and Grow Together</h2>
@@ -46,7 +46,7 @@ const ContactUs = () => {
       {/* Right Section */}
       <div className="w-full md:w-2/5 flex justify-center">
           <Image
-                        src="/home-img/Digital-Marketing-Excellence.jpeg"
+                        src="/service-img/women.jpeg"
                         width={500}
                         height={500}
                         alt="Contact Us"

@@ -25,22 +25,22 @@ const steps = [
     {
         title: "Discovery",
         description: "We analyze your business needs and set a strategic foundation.",
-        image: "/home-img/Discovery.jpeg",
+        image: "/home-img/discovery.jpeg",
     },
     {
         title: "Planning",
         description: "Crafting a data-driven strategy to meet your business goals.",
-        image: "/home-img/Planning.jpeg",
+        image: "/home-img/planing.jpeg",
     },
     {
         title: "Execution",
         description: "Bringing innovative solutions to life with seamless implementation.",
-        image: "/home-img/Execution.jpeg",
+        image: "/home-img/execution.jpeg",
     },
     {
         title: "Optimization & Growth",
         description: "Ensuring continued success with ongoing support and enhancements.",
-        image: "/home-img/Support.jpeg",
+        image: "/home-img/growth.jpeg",
     },
 ];
 

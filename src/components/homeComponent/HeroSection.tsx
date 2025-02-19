@@ -2,7 +2,7 @@ import React from 'react';
 
 const HeroSection = () => {
     return (
-        <section className="relative py-20 flex items-center justify-between bg-cover bg-center" style={{ backgroundImage: 'url("https://storage.googleapis.com/a1aa/image/a9d79198-0b0f-4074-988a-50755eb5f4a5.jpeg")' }}>
+        <section className="relative py-20 flex items-center justify-between bg-cover bg-center" style={{ backgroundImage: 'url("/home-img/homeBanner.jpeg")' }}>
             <div className="absolute inset-0 bg-black opacity-50"></div>
             <div className='container mx-auto'>
             <div className="text-center md:text-left w-1/2 relative z-10">

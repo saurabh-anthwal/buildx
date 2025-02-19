@@ -1,6 +1,6 @@
 import React from "react";
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
-
+import Link from "next/link";
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-gray-300 py-10">
@@ -20,19 +20,19 @@ const Footer = () => {
             <div>
               <h2 className="text-lg font-semibold text-white">Quick Links</h2>
               <ul className="mt-3 space-y-2">
-                <li><a href="#" className="hover:text-white">Home</a></li>
-                <li><a href="#" className="hover:text-white">Services</a></li>
-                <li><a href="#" className="hover:text-white">About Us</a></li>
-                <li><a href="#" className="hover:text-white">Contact</a></li>
+                <li><Link href="/" className="hover:text-white">Home</Link></li>
+                <li><Link href="/services" className="hover:text-white">Services</Link></li>
+                <li><Link href="/about" className="hover:text-white">About Us</Link></li>
+                <li><Link href="/contact" className="hover:text-white">Contact</Link></li>
               </ul>
             </div>
             <div>
               <h2 className="text-lg font-semibold text-white">Services</h2>
               <ul className="mt-3 space-y-2">
-                <li><a href="#" className="hover:text-white">IT Consulting</a></li>
-                <li><a href="#" className="hover:text-white">Software Development</a></li>
-                <li><a href="#" className="hover:text-white">Digital Marketing</a></li>
-                <li><a href="#" className="hover:text-white">Cloud Solutions</a></li>
+                <li><a href="/services" className="hover:text-white">IT Consulting</a></li>
+                <li><a href="/services" className="hover:text-white">Software Development</a></li>
+                <li><a href="/services" className="hover:text-white">Digital Marketing</a></li>
+                <li><a href="/services" className="hover:text-white">SEO</a></li>
               </ul>
             </div>
           </div>

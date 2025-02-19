@@ -27,12 +27,12 @@ const TrustedPartner = () => {
   };
 
   return (
-    <section className="py-10 bg-gradient-to-r from-gray-200 to-gray-600">
+    <section className="py-10 bg-gradient-to-r from-indigo-300 to-gray-600">
       <div className="container mx-auto text-center">
         <h2 className="text-5xl font-semibold text-white leading-tight mb-6">
           Our Trusted Partners: Powering Innovation Together
         </h2>
-        <p className="mb-6 text-lg text-gray-300 font-body">
+        <p className="mb-6 text-lg text-white font-body">
           We collaborate with industry-leading partners to deliver best-in-class solutions. Our partnerships enable us to provide you with the latest technologies and expert support, ensuring your business stays ahead of the curve.
         </p>
 
@@ -41,14 +41,14 @@ const TrustedPartner = () => {
           {/* Partner Images */}
           <div className="flex space-x-4 overflow-hidden w-full justify-center">
             {partners.slice(currentIndex, currentIndex + visibleImages).map((partner, index) => (
-        <Image
-                                                      key={index} src={partner}
-                                                      width={500}
-                                                      height={500}
-                                                      alt={`Partner ${index + 1}`}
-                                                     className="h-24 w-auto object-contain transition-transform duration-500"
-                                                      style={{mixBlendMode: 'multiply'}}
-                                                    />
+              <Image
+                key={index} src={partner}
+                width={500}
+                height={500}
+                alt={`Partner ${index + 1}`}
+                className="h-24 w-auto object-contain transition-transform duration-500"
+                style={{ mixBlendMode: 'multiply' }}
+              />
             ))}
           </div>
         </div>

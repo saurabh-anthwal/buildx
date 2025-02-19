@@ -1,20 +1,20 @@
 import React from 'react';
-import { FaCode, FaTools, FaUserFriends } from 'react-icons/fa';
+import { FaCode, FaTools, FaUserFriends, FaBullhorn, FaSearch, FaVideo, FaChartLine, FaImage   } from 'react-icons/fa';
 
 const services = [
   { icon: <FaCode />, title: "Website Development", description: "Bespoke software solutions tailored to your business needs." },
   { icon: <FaTools />, title: "Website Maintenance", description: "Keep your website up-to-date and running smoothly." },
   { icon: <FaUserFriends />, title: "Staff Augmentation", description: "Providing skilled professionals to enhance your team." },
-  { icon: <FaCode />, title: "Social Media Marketing", description: "Boost your brand visibility with effective marketing." },
-  { icon: <FaTools />, title: "SEO Services", description: "Optimize your site to rank higher and attract more traffic." },
-  { icon: <FaUserFriends />, title: "Video Creation & Marketing", description: "Creating engaging videos for effective marketing." },
-  { icon: <FaCode />, title: "Google Ad Management", description: "Maximize visibility and lead generation with Google Ads." },
-  { icon: <FaTools />, title: "Ad Creatives", description: "Designing eye-catching ad creatives to drive conversions." },
+  { icon: <FaBullhorn />, title: "Social Media Marketing", description: "Boost your brand visibility with effective marketing." },
+  { icon: <FaSearch />, title: "SEO Services", description: "Optimize your site to rank higher and attract more traffic." },
+  { icon: <FaVideo />, title: "Video Creation & Marketing", description: "Creating engaging videos for effective marketing." },
+  { icon: <FaChartLine />, title: "Google Ad Management", description: "Maximize visibility and lead generation with Google Ads." }, // Unique icon
+  { icon: <FaImage  />, title: "Ad Creatives", description: "Designing eye-catching ad creatives to drive conversions." }, // Change this to a unique icon
 ];
 
 const WhatWeDo = () => {
   return (
-    <section className="container mx-auto px-6 py-16 ">
+    <section className="container mx-auto px-6 py-16">
       <h2 className="text-4xl font-extrabold text-center mb-12 tracking-wide uppercase">What We Do</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {services.map((service, index) => (

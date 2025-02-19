@@ -7,19 +7,19 @@ const services = [
     title: "AI-Powered Digital Strategies",
     description:
       "Leverage cutting-edge AI and data-driven insights to supercharge your digital presence.",
-    image: "/home-img/Data-Driven-Insights.jpeg",
+    image: "/home-img/ai-power.jpeg",
   },
   {
     title: "Next-Gen Web Development",
     description:
       "We craft high-performance, scalable, and SEO-optimized websites tailored to your business goals.",
-    image: "/home-img/Digital-Marketing-Excellence.jpeg",
+    image: "/home-img/web-dev.jpeg",
   },
   {
     title: "Social Media & Ad Campaigns",
     description:
       "Maximize reach with targeted social media strategies and data-backed advertising solutions.",
-    image: "/home-img/inovation.jpeg",
+    image: "/home-img/social-media.jpeg",
   },
 ];
 

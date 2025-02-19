@@ -10,7 +10,7 @@ const AboutUs = () => {
       <section
         className="relative h-[50vh] bg-cover bg-center"
         style={{
-          backgroundImage: "url('https://storage.googleapis.com/a1aa/image/9fb24bc3-e158-4a3f-8654-c4a43cacb502.jpeg')",
+          backgroundImage: "url('/about-img/banner2.jpeg')",
         }}
       >
         <div className="flex items-center justify-center h-full bg-black bg-opacity-70">
@@ -19,7 +19,7 @@ const AboutUs = () => {
             <h1 className="text-5xl font-semibold">
               Innovating the Future of Construction
             </h1>
-            <p className="mt-4 text-lg">
+            <p className="mt-4 text-lg font-semibold">
               At Build-X, we are dedicated to transforming the construction industry through innovative technologies and sustainable practices, ensuring a better tomorrow for our communities and the environment.
             </p>
             <a href="#contact" className="mt-6 inline-block bg-yellow-500 text-black font-semibold py-2 px-4 rounded hover:bg-yellow-400 transition">

@@ -5,7 +5,7 @@ import EffectiveDigital from "@/components/serviceComponent/EffectiveDigital";
 import OurProcess from "@/components/serviceComponent/OurProcess";
 import WhyChoose from "@/components/serviceComponent/WhyChoose";
 import Image from 'next/image'
- 
+
 import React from "react";
 
 const Services: React.FC = () => {
@@ -18,7 +18,7 @@ const Services: React.FC = () => {
         className="relative h-[50vh] bg-cover bg-center"
         style={{
           backgroundImage:
-            "url('https://cdn.gamma.app/32hkwzjbtg7xlr3/generated-images/fnGW_RlyZ_-rmRYQQcaLQ.jpg')",
+            "url('/service-img/banner2.jpeg')",
         }}
       >
         <div className="flex items-center justify-center h-full bg-black bg-opacity-70">
@@ -38,17 +38,17 @@ const Services: React.FC = () => {
 
       <div className="container mx-auto space-y-20">
         {/* Second Section */}
-        <section className="flex flex-col gap-6 md:flex-row my-10">
+        <section className="flex flex-col items-start gap-12 md:flex-row my-10">
           <div className="md:w-1/3">
-          <Image
-      src="/home-img/Digital-Marketing-Excellence.jpeg"
-      width={500}
-      height={500}
-      alt="Services in Action"
-       className="w-full h-auto"
-    />
+            <Image
+              src="/service-img/service3.jpeg"
+              width={500}
+              height={500}
+              alt="Services in Action"
+              className="w-full h-auto"
+            />
           </div>
-          <div className="md:w-1/2 p-8">
+          <div className="md:w-1/2">
             <h2 className="text-4xl font-semibold text-gray-800">See Our Services in Action</h2>
             <p className="mt-4 text-lg text-gray-600 font-[500] font-body">
               Witness our capabilities firsthand. Our animated showcase
@@ -56,7 +56,7 @@ const Services: React.FC = () => {
               providing comprehensive IT and digital solutions tailored to your
               needs.
             </p>
-            <ul className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-8 font-body">
+            <ul className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6 font-body">
               <li className="flex items-start gap-6 p-4 ">
                 <div><p className="bg-gray-200 px-3 py-2 text-lg font-semibold">1</p></div>
                 <div>
@@ -92,7 +92,7 @@ const Services: React.FC = () => {
       </div>
 
       {/* Third Section */}
-        <ComprhensiveIT />
+      <ComprhensiveIT />
 
       <div className="container mx-auto space-y-20">
         {/* Fourth Section */}
@@ -100,7 +100,7 @@ const Services: React.FC = () => {
       </div>
 
       {/* five Section */}
-        <WhyChoose />
+      <WhyChoose />
 
       {/* six section */}
       <section className="container mx-auto font-body">
@@ -124,17 +124,17 @@ const Services: React.FC = () => {
           </div>
           <div className="w-[40%]">
             <Image
-      src="/home-img/Digital-Marketing-Excellence.jpeg"
-      width={500}
-      height={500}
-      alt="Picture of the author"
-    />
+              src="/service-img/client-success.jpeg"
+              width={500}
+              height={500}
+              alt="Picture of the author"
+            />
           </div>
         </div>
       </section>
 
       {/* sevent section  */}
-        <OurProcess />
+      <OurProcess />
 
       {/* eight section  */}
       <ContactDetail />
