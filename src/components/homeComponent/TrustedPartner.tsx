@@ -3,11 +3,12 @@ import React, { useState, useEffect } from 'react';
 import Image from "next/image";
 
 const partners = [
-  "/home-img/cloud.jpeg",
-  "/home-img/inovation.jpeg",
-  "/home-img/managed.jpeg",
-  "/home-img/software.jpeg",
-  "/home-img/support.jpeg",
+  "/home-img/ai-power.jpeg",
+  "/home-img/ai-power.jpeg",
+  "/home-img/ai-power.jpeg",
+  "/home-img/ai-power.jpeg",
+  "/home-img/ai-power.jpeg",
+  "/home-img/ai-power.jpeg",
 ];
 
 const TrustedPartner = () => {
