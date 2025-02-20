@@ -4,12 +4,12 @@ import Image from "next/image";
 
 const partners = [
   // "/home-img/ai-power.jpeg",
-  "https://images.crunchbase.com/image/upload/c_pad,f_auto,q_auto:eco,dpr_1/lbb8yj7x7vsb12bjcxgk",
-  "https://download.logo.wine/logo/Google/Google-Logo.wine.png",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuueDAydAR7PpEtxS7tQerk6yORTn3KeWH0Q&s",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr95DPhxYnDyF-TWJv8QBPt1PDzBWGG__nkw&s",
-  "https://logos-world.net/wp-content/uploads/2020/10/Slack-Logo-2019-present.jpg",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6h1Yq_h9fcLRe3BB4yPyLh9mWxDLbuBOzjw&s",
+  "/trusted-partners/google.png",
+  "/trusted-partners/github.png",
+  "/trusted-partners/linkedin.png",
+  "/trusted-partners/meta.png",
+  "/trusted-partners/slack.png",
+  "/trusted-partners/vercel.png",
 ];
 
 const TrustedPartner = () => {
@@ -43,7 +43,7 @@ const TrustedPartner = () => {
           {/* Partner Images */}
           <div className="flex space-x-4 overflow-hidden w-full justify-center">
             {partners.slice(currentIndex, currentIndex + visibleImages).map((partner, index) => (
-              <img
+              <Image
                 key={index} src={partner}
                 width={500}
                 height={500}
