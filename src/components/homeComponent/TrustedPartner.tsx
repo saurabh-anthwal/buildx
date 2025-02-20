@@ -19,13 +19,17 @@ const TrustedPartner = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       handleNext();
-    }, 5000);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, [currentIndex]);
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % partners.length);
+  };
+
+  const getVisibleImages = () => {
+    return [...partners, ...partners].slice(currentIndex, currentIndex + visibleImages);
   };
 
   return (
@@ -41,13 +45,19 @@ const TrustedPartner = () => {
         {/* Slider Section */}
         <div className="relative flex justify-center items-center w-full max-w-4xl mx-auto overflow-hidden">
           {/* Partner Images */}
-          <div className="flex space-x-4 gap-8 overflow-hidden w-full justify-center">
-            {partners.slice(currentIndex, currentIndex + visibleImages).map((partner, index) => (
+          <div 
+          className="flex space-x-4 gap-8 transition-transform duration-700 ease-in-out overflow-hidden w-full justify-center"
+          style={{
+            transform: `translateX(-${currentIndex}%)`,
+            mixBlendMode: 'multiply'
+          }}
+          >
+            {getVisibleImages().map((partner, index) => (
               <div key={index} className="w-48 h-24 flex items-center justify-center">
                 <Image
                   src={partner}
-                  width={192} // Ensuring consistency
-                  height={96} // Ensuring consistency
+                  width={192}
+                  height={96}
                   alt={`Partner ${index + 1}`}
                   className="object-contain w-full h-full transition-transform duration-500"
                   style={{ mixBlendMode: 'multiply' }}
