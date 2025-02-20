@@ -25,7 +25,7 @@ const steps = [
     {
         title: "Discovery",
         description: "We analyze your business needs and set a strategic foundation.",
-        image: "/home-img/discovery.jpeg",
+        image: "/home-img/Discovery.jpeg",
     },
     {
         title: "Planning",
@@ -35,7 +35,7 @@ const steps = [
     {
         title: "Execution",
         description: "We bring an innovative solution to life with seamless implementation.",
-        image: "/home-img/execution.jpeg",
+        image: "/home-img/Execution.jpeg",
     },
     {
         title: "Optimization & Growth",
