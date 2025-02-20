@@ -1,5 +1,5 @@
 import OurMission from "@/components/about/OurMission";
-import OurStory from "@/components/about/OurStory";
+// import OurStory from "@/components/about/OurStory";
 import Vision from "@/components/about/Vision";
 import React from "react";
 
@@ -17,10 +17,11 @@ const AboutUs = () => {
           {/* Increased opacity to 70% */}
           <div className="w-2/3 mx-auto text-white">
             <h1 className="text-5xl font-semibold">
-              Innovating the Future of Construction
+            Syncing Innovation
+            with Influence
             </h1>
             <p className="mt-4 text-lg font-semibold">
-              At Build-X, we are dedicated to transforming the construction industry through innovative technologies and sustainable practices, ensuring a better tomorrow for our communities and the environment.
+            We empower businesses with AI-driven solutions to enhance efficiency, optimize operations, and drive growth. By combining innovation with strategic influence, we help brands stay ahead in the digital world. Our expertise ensures smarter decision-making, improved engagement, and sustainable success.
             </p>
             <a href="/contact" className="mt-6 inline-block bg-yellow-500 text-black font-semibold py-2 px-4 rounded hover:bg-yellow-400 transition">
               Get in Touch
@@ -31,7 +32,7 @@ const AboutUs = () => {
 
       <div className="container mx-auto p-6">
         {/* Our Story Section */}
-        <OurStory />
+        {/* <OurStory /> */}
 
         {/* Mission Section */}
         <OurMission />

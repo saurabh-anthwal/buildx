@@ -7,7 +7,7 @@ const partners = [
   "/trusted-partners/google.png",
   "/trusted-partners/github.png",
   "/trusted-partners/linkedin.png",
-  "/trusted-partners/meta.png",
+  "/trusted-partners/meta.jpg",
   "/trusted-partners/slack.png",
   "/trusted-partners/vercel.png",
 ];
@@ -35,23 +35,26 @@ const TrustedPartner = () => {
           Our Trusted Partners: Powering Innovation Together
         </h2>
         <p className="mb-6 text-lg text-white font-body">
-        We work alongside industry-leading partners to deliver top-tier solutions. Through these collaborations, we deliver the latest technologies and expert support, ensuring your business remains at the forefront of innovation and competition.
+          We work alongside industry-leading partners to deliver top-tier solutions. Through these collaborations, we deliver the latest technologies and expert support, ensuring your business remains at the forefront of innovation and competition.
         </p>
 
         {/* Slider Section */}
         <div className="relative flex justify-center items-center w-full max-w-4xl mx-auto overflow-hidden">
           {/* Partner Images */}
-          <div className="flex space-x-4 overflow-hidden w-full justify-center">
+          <div className="flex space-x-4 gap-8 overflow-hidden w-full justify-center">
             {partners.slice(currentIndex, currentIndex + visibleImages).map((partner, index) => (
-              <Image
-                key={index} src={partner}
-                width={500}
-                height={500}
-                alt={`Partner ${index + 1}`}
-                className="h-24 w-auto object-contain transition-transform duration-500"
-                style={{ mixBlendMode: 'multiply' }}
-              />
+              <div key={index} className="w-48 h-24 flex items-center justify-center">
+                <Image
+                  src={partner}
+                  width={192} // Ensuring consistency
+                  height={96} // Ensuring consistency
+                  alt={`Partner ${index + 1}`}
+                  className="object-contain w-full h-full transition-transform duration-500"
+                  style={{ mixBlendMode: 'multiply' }}
+                />
+              </div>
             ))}
+
           </div>
         </div>
       </div>

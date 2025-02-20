@@ -31,12 +31,12 @@ const WhyChoose = () => {
       }}
     >
       {/* Overlay for better contrast */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-gray-900/50"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-black/30 to-gray-900/80"></div>
 
-      <div className="z-10 p-6 w-full h-full flex items-center">
+      <div className="p-6 w-full h-full flex items-center">
         <div className="container mx-auto text-center md:text-left">
           <h2 className="text-5xl font-extrabold text-white">Why Choose Us?</h2>
-          <p className="mt-4 text-lg text-gray-300 font-medium max-w-2xl mx-auto md:mx-0">
+          <p className="mt-4 text-lg text-white font-medium max-w-2xl mx-auto md:mx-0">
           We combine expertise of modern technologies with a results-driven approach to deliver exceptional value. Our commitment to innovation and customer satisfaction sets us apart.
           </p>
 
