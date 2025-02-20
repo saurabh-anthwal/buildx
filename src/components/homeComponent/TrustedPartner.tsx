@@ -3,12 +3,13 @@ import React, { useState, useEffect } from 'react';
 import Image from "next/image";
 
 const partners = [
-  "/home-img/ai-power.jpeg",
-  "/home-img/ai-power.jpeg",
-  "/home-img/ai-power.jpeg",
-  "/home-img/ai-power.jpeg",
-  "/home-img/ai-power.jpeg",
-  "/home-img/ai-power.jpeg",
+  // "/home-img/ai-power.jpeg",
+  "https://images.crunchbase.com/image/upload/c_pad,f_auto,q_auto:eco,dpr_1/lbb8yj7x7vsb12bjcxgk",
+  "https://download.logo.wine/logo/Google/Google-Logo.wine.png",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuueDAydAR7PpEtxS7tQerk6yORTn3KeWH0Q&s",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr95DPhxYnDyF-TWJv8QBPt1PDzBWGG__nkw&s",
+  "https://logos-world.net/wp-content/uploads/2020/10/Slack-Logo-2019-present.jpg",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6h1Yq_h9fcLRe3BB4yPyLh9mWxDLbuBOzjw&s",
 ];
 
 const TrustedPartner = () => {
@@ -34,7 +35,7 @@ const TrustedPartner = () => {
           Our Trusted Partners: Powering Innovation Together
         </h2>
         <p className="mb-6 text-lg text-white font-body">
-          We collaborate with industry-leading partners to deliver best-in-class solutions. Our partnerships enable us to provide you with the latest technologies and expert support, ensuring your business stays ahead of the curve.
+        We work alongside industry-leading partners to deliver top-tier solutions. Through these collaborations, we deliver the latest technologies and expert support, ensuring your business remains at the forefront of innovation and competition.
         </p>
 
         {/* Slider Section */}
@@ -42,7 +43,7 @@ const TrustedPartner = () => {
           {/* Partner Images */}
           <div className="flex space-x-4 overflow-hidden w-full justify-center">
             {partners.slice(currentIndex, currentIndex + visibleImages).map((partner, index) => (
-              <Image
+              <img
                 key={index} src={partner}
                 width={500}
                 height={500}

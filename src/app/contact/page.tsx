@@ -104,9 +104,7 @@ const ContactUs = () => {
             <h2 className="text-3xl font-semibold text-gray-900 mb-6">Our Office</h2>
             <div className="flex items-center space-x-3">
               <FaEnvelope className="text-blue-600 text-xl" />
-              <a href="mailto:abc@gmail.com" className="text-blue-500 hover:underline text-lg font-medium">
-                abc@gmail.com
-              </a>
+              <a href="mailto:connect@buildxc.com" className="hover:underline"> connect@buildxc.com</a>
             </div>
 
             <div className="flex items-center space-x-3">

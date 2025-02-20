@@ -40,10 +40,17 @@ const Footer = () => {
           {/* Contact Information */}
           <div>
             <h2 className="text-lg font-semibold text-white">Contact Us</h2>
-            <p className="mt-3 text-gray-400">Phone: (123) 456-7890</p>
-            <p className="text-gray-400">Email: info@yourcompany.com</p>
+            <p className="mt-3 text-gray-400">
+              Phone:
+              <a href="tel:+11234567890" className="hover:underline"> (123) 456-7890</a>
+            </p>
+            <p className="text-gray-400">
+              Email:
+              <a href="mailto:connect@buildxc.com" className="hover:underline"> connect@buildxc.com</a>
+            </p>
             <p className="text-gray-400">Address: 123 Main St, City, Country</p>
           </div>
+
         </div>
 
         {/* Social Media & Copyright */}

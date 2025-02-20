@@ -29,17 +29,17 @@ const steps = [
     },
     {
         title: "Planning",
-        description: "Crafting a data-driven strategy to meet your business goals.",
-        image: "/home-img/planing.jpeg",
+        description: "We craft a data-driven strategy to meet your business goals.",
+        image: "/home-img/planning2.jpeg",
     },
     {
         title: "Execution",
-        description: "Bringing innovative solutions to life with seamless implementation.",
+        description: "We bring an innovative solution to life with seamless implementation.",
         image: "/home-img/execution.jpeg",
     },
     {
         title: "Optimization & Growth",
-        description: "Ensuring continued success with ongoing support and enhancements.",
+        description: "We ensure continued success with ongoing support and enhancements.",
         image: "/home-img/growth.jpeg",
     },
 ];

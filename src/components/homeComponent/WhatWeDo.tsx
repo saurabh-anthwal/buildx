@@ -6,7 +6,7 @@ const services = [
   { icon: <FaTools />, title: "Website Maintenance", description: "Keep your website up-to-date and running smoothly." },
   { icon: <FaUserFriends />, title: "Staff Augmentation", description: "Providing skilled professionals to enhance your team." },
   { icon: <FaBullhorn />, title: "Social Media Marketing", description: "Boost your brand visibility with effective marketing." },
-  { icon: <FaSearch />, title: "SEO Services", description: "Optimize your site to rank higher and attract more traffic." },
+  { icon: <FaSearch />, title: "SEO Services", description: "Maximize your brand’s visibility across multiple online channels, and attract more customers." },
   { icon: <FaVideo />, title: "Video Creation & Marketing", description: "Creating engaging videos for effective marketing." },
   { icon: <FaChartLine />, title: "Google Ad Management", description: "Maximize visibility and lead generation with Google Ads." }, // Unique icon
   { icon: <FaImage  />, title: "Ad Creatives", description: "Designing eye-catching ad creatives to drive conversions." }, // Change this to a unique icon

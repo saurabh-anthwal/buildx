@@ -22,7 +22,7 @@ const AboutUs = () => {
             <p className="mt-4 text-lg font-semibold">
               At Build-X, we are dedicated to transforming the construction industry through innovative technologies and sustainable practices, ensuring a better tomorrow for our communities and the environment.
             </p>
-            <a href="#contact" className="mt-6 inline-block bg-yellow-500 text-black font-semibold py-2 px-4 rounded hover:bg-yellow-400 transition">
+            <a href="/contact" className="mt-6 inline-block bg-yellow-500 text-black font-semibold py-2 px-4 rounded hover:bg-yellow-400 transition">
               Get in Touch
             </a>
           </div>

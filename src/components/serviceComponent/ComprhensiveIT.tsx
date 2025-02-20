@@ -6,7 +6,7 @@ const ITServices = () => {
       <div className="container mx-auto text-center px-6">
         <h2 className="text-4xl font-extrabold mb-4">Comprehensive IT Services</h2>
         <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-          Our IT services are designed to optimize your technology infrastructure and drive efficiency.
+        Our IT services are designed to optimize your technology infrastructure and to drive efficiency.
         </p>
 
         <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">

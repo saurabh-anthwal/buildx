@@ -22,22 +22,23 @@ const Services: React.FC = () => {
         }}
       >
         <div className="flex items-center justify-center h-full bg-black bg-opacity-70">
-          {/* Increased opacity to 70% */}
           <div className="w-2/3 mx-auto text-white">
             <h1 className="text-5xl font-semibold">
               Modern IT and Digital Services for Business Growth
             </h1>
             <p className="mt-4 text-lg">
-              {`We offer cutting-edge IT and digital services designed to propel
-              your business forward. From website development to <br />
-              strategic marketing, we've got you covered.`}
+              {`We offer cutting-edge IT and digital services designed to propel your business forward. We create a bridge between the new modern AI technologies and customer needs. `}
             </p>
           </div>
         </div>
       </section>
 
+      {/* Fourth Section */}
       <div className="container mx-auto space-y-20">
-        {/* Second Section */}
+        <EffectiveDigital />
+      </div>
+
+      {/* <div className="container mx-auto space-y-20">
         <section className="flex flex-col items-start gap-12 md:flex-row my-10">
           <div className="md:w-1/3">
             <Image
@@ -89,15 +90,13 @@ const Services: React.FC = () => {
             </ul>
           </div>
         </section>
-      </div>
+      </div> */}
 
       {/* Third Section */}
       <ComprhensiveIT />
 
-      <div className="container mx-auto space-y-20">
-        {/* Fourth Section */}
-        <EffectiveDigital />
-      </div>
+            {/* sevent section  */}
+            <OurProcess />
 
       {/* five Section */}
       <WhyChoose />
@@ -132,9 +131,6 @@ const Services: React.FC = () => {
           </div>
         </div>
       </section>
-
-      {/* sevent section  */}
-      <OurProcess />
 
       {/* eight section  */}
       <ContactDetail />

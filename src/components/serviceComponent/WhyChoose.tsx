@@ -16,11 +16,15 @@ const WhyChoose = () => {
       title: "Client-Centric Approach",
       description: "We prioritize your unique needs and tailor our services accordingly.",
     },
+    {
+      title: "Empowering our customers with AI.",
+      description: "We empower our customers with AI, helping them stay ahead of the competition.",
+    },
   ];
 
   return (
     <section
-      className="my-10 relative flex h-[60vh] min-h-[60vh] bg-cover bg-center"
+      className="my-10 relative flex h-[70vh] min-h-[60vh] bg-cover bg-center"
       style={{
         backgroundImage:
           "url(/service-img/choose.jpeg)",
@@ -33,12 +37,11 @@ const WhyChoose = () => {
         <div className="container mx-auto text-center md:text-left">
           <h2 className="text-5xl font-extrabold text-white">Why Choose Us?</h2>
           <p className="mt-4 text-lg text-gray-300 font-medium max-w-2xl mx-auto md:mx-0">
-            We combine expertise with a results-driven approach to deliver exceptional value. 
-            Our commitment to innovation and customer satisfaction sets us apart.
+          We combine expertise of modern technologies with a results-driven approach to deliver exceptional value. Our commitment to innovation and customer satisfaction sets us apart.
           </p>
 
           {/* Feature Cards */}
-          <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="mt-8 grid grid-cols-1 md:grid-cols-4 gap-8">
             {features.map((feature, index) => (
               <div
                 key={index}

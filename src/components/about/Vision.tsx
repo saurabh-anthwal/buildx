@@ -7,17 +7,17 @@ const OurVision = () => {
           {/* Left Content */}
           <div className="md:w-1/2">
             <h2 className="text-5xl font-bold text-gray-900 mb-6">Our Vision</h2>
-            <p className="text-lg font-semibold text-gray-600 mb-6">
+            {/* <p className="text-lg font-semibold text-gray-600 mb-6">
               To be the **leading force in IT and Digital Solutions**, helping businesses **scale, innovate, and thrive** through **technology-driven strategies**.
-            </p>
+            </p> */}
             <ul className="space-y-4">
               {[
-                "Drive digital transformation with innovative technologies.",
-                "Deliver high-quality IT solutions for long-term success.",
-                "Enhance brand growth with targeted digital marketing strategies.",
-                "Build sustainable and scalable solutions for the future.",
+                "To drive digital transformation with innovative technologies.",
+                "To deliver high-quality IT solutions for long-term success.",
+                "To enhance brand growth with targeted digital marketing strategies.",
+                "To build sustainable and scalable solutions for the future.",
               ].map((point, index) => (
-                <li key={index} className="flex items-center text-lg text-gray-700">
+                <li key={index} className="flex items-start text-lg text-gray-700">
                   <span className="text-blue-600 text-2xl mr-3">✔</span> {point}
                 </li>
               ))}
