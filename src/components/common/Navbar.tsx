@@ -14,7 +14,8 @@ const Navbar: React.FC = () => {
     <nav className="bg-white shadow-md fixed w-full z-10">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="text-xl font-semibold text-gray-800">
-          <Link href="/" className='text-4xl'>BuildXC</Link>
+          <Link href="/" className='text-4xl'><img src='logo1.png' className='h-12' alt='buildxc logo' /></Link>
+          {/* <Link href="/" className='text-4xl'>Build<span className='text-orange-500'>XC</span></Link> */}
         </div>
         <div className="hidden md:flex space-x-4 gap-6 items-center">
           <Link href="/services" className="text-gray-600 hover:text-gray-800 uppercase">Services</Link>

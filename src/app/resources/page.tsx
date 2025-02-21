@@ -2,17 +2,21 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import ClipLoader from "react-spinners/ClipLoader";
 
 export default function ResourcesPage() {
   const [blogs, setBlogs] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const color = "#3498db"; // Blue color for better visibility
 
   async function getBlogs() {
-    const SHEET_URL = "https://script.google.com/macros/s/AKfycbwY1BNE15tZEXKDvVJZKFXr8-27e-ZGkVcAPAzSJ5ARRP7to5ooMAthSXRMRWs5S5mqGQ/exec";
+    const SHEET_URL =
+      "https://script.google.com/macros/s/AKfycbwY1BNE15tZEXKDvVJZKFXr8-27e-ZGkVcAPAzSJ5ARRP7to5ooMAthSXRMRWs5S5mqGQ/exec";
 
     try {
       const response = await fetch(SHEET_URL);
       const data = await response.json();
-      
+
       if (data?.data) {
         setBlogs(data.data);
       } else {
@@ -20,6 +24,8 @@ export default function ResourcesPage() {
       }
     } catch (error) {
       console.error("Error fetching blogs:", error);
+    } finally {
+      setLoading(false);
     }
   }
 
@@ -34,30 +40,35 @@ export default function ResourcesPage() {
         Get expert opinions and deep insights into IT and Digital solutions.
       </p>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {blogs.length > 0 ? (
-          blogs.map((blog, index) => (
+      {loading ? (
+        // Centered Loader
+        <div className="flex justify-center items-center h-60">
+          <ClipLoader color={color} loading={loading} size={50} />
+        </div>
+      ) : blogs.length > 0 ? (
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {blogs.map((blog: any, index: number) => (
             <div
               key={index}
               className="bg-white shadow-lg rounded-lg overflow-hidden transition-transform hover:scale-105"
             >
               <Image
-                src={blog?.Image_url}
-                alt={blog?.Title}
+                src={blog.Image_url}
+                alt={blog.Title}
                 width={600}
                 height={400}
                 className="w-full h-60 object-cover"
               />
               <div className="p-4">
-                <h2 className="text-xl font-semibold">{blog?.Title}</h2>
-                <p className="text-gray-600 mt-2">{blog?.Description}</p>
+                <h2 className="text-xl font-semibold">{blog.Title}</h2>
+                <p className="text-gray-600 mt-2">{blog.Description}</p>
               </div>
             </div>
-          ))
-        ) : (
-          <p className="text-center text-gray-500">Loading blogs...</p>
-        )}
-      </div>
+          ))}
+        </div>
+      ) : (
+        <p className="text-center text-gray-500">No blogs available.</p>
+      )}
     </div>
   );
 }
