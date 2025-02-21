@@ -8,10 +8,10 @@ const ContactUs = () => {
   const [isConsultationOpen, setConsultationOpen] = useState(false);
 
   return (
-    <section className="container mx-auto py-16 flex flex-col md:flex-row items-center gap-12 font-body px-2 md:px-0">
+    <section className="container mx-auto md:py-16 pb-4 flex flex-col md:flex-row items-center gap-12 font-body px-6 md:px-0">
       {/* Left Section */}
       <div className="w-full md:w-3/5">
-        <h2 className="text-4xl font-bold text-gray-900 mb-4">Let’s Connect and Grow Together</h2>
+        <h2 className="text-4xl font-bold text-gray-900 mb-4">{`Let’s Connect and Grow Together`}</h2>
         <p className="text-lg text-gray-600 font-medium mb-8">
           {`Whether you're looking for expert IT solutions, digital transformation strategies, 
           or tailored business services, we’re here to help. Let’s discuss your goals and craft 

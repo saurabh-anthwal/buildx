@@ -107,18 +107,18 @@ const Services: React.FC = () => {
         <p className="text-base sm:text-lg text-gray-600 font-medium text-center md:text-left mb-10">{`Discover how we've helped businesses like yours achieve remarkable growth and success. Our client testimonials showcase the impact of our services and the value we deliver.`}</p>
 
         <div className="flex flex-col-reverse md:flex-row justify-between items-center md:items-start w-full">
-          <div className="w-full md:w-[60%] space-y-6">
+          <div className="w-full md:w-[60%] space-y-6 ">
             <div className="py-5 mb-5">
               <h4 className="font-semibold text-2xl mb-4">John S. - CEO, Tech Startup</h4>
-              <p className="text-lg w-3/4">{`"Their SEO strategies transformed our online presence, driving a 300% increase in organic traffic."`}</p>
+              <p className="text-lg md:w-3/4">{`"Their SEO strategies transformed our online presence, driving a 300% increase in organic traffic."`}</p>
             </div>
             <div className="py-5 mb-5">
               <h4 className="font-semibold text-2xl mb-4">Emily R. - Marketing Director, Retail Chain</h4>
-              <p className="text-lg w-3/4">{`"The ad management services significantly improved our ROI and customer engagement."`}</p>
+              <p className="text-lg md:w-3/4">{`"The ad management services significantly improved our ROI and customer engagement."`}</p>
             </div>
             <div className="py-5 mb-5">
               <h4 className="font-semibold text-2xl mb-4">David L. - Founder, E-commerce Business</h4>
-              <p className="text-lg w-3/4">{`"The website they developed is not only beautiful but also highly functional, boosting our sales."`}</p>
+              <p className="text-lg md:w-3/4">{`"The website they developed is not only beautiful but also highly functional, boosting our sales."`}</p>
             </div>
           </div>
           <div className="w-[40%]">
