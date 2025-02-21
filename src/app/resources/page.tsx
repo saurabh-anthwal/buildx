@@ -7,20 +7,24 @@ export default function ResourcesPage() {
   const [blogs, setBlogs] = useState([]);
 
   async function getBlogs() {
-    const SHEET_URL = "https://sheetdb.io/api/v1/1pc2pqz9c5cu6";
+    const SHEET_URL = "https://script.google.com/macros/s/AKfycbwY1BNE15tZEXKDvVJZKFXr8-27e-ZGkVcAPAzSJ5ARRP7to5ooMAthSXRMRWs5S5mqGQ/exec";
 
     try {
       const response = await fetch(SHEET_URL);
-      const data = await response.json(); 
-      console.log("sssss", data)
-      setBlogs(data);
+      const data = await response.json();
+      
+      if (data?.data) {
+        setBlogs(data.data);
+      } else {
+        console.error("Unexpected API response format:", data);
+      }
     } catch (error) {
       console.error("Error fetching blogs:", error);
     }
   }
 
   useEffect(() => {
-    // getBlogs();
+    getBlogs();
   }, []);
 
   return (
@@ -31,24 +35,28 @@ export default function ResourcesPage() {
       </p>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {blogs.map((blog, index) => (
-          <div
-            key={index}
-            className="bg-white shadow-lg rounded-lg overflow-hidden transition-transform hover:scale-105"
-          >
-            <Image
-              src={blog?.Image_url}
-              alt={blog?.Title}
-              width={600}
-              height={400}
-              className="w-full h-60 object-cover"
-            />
-            <div className="p-4">
-              <h2 className="text-xl font-semibold">{blog?.Title}</h2>
-              <p className="text-gray-600 mt-2">{blog?.Description}</p>
+        {blogs.length > 0 ? (
+          blogs.map((blog, index) => (
+            <div
+              key={index}
+              className="bg-white shadow-lg rounded-lg overflow-hidden transition-transform hover:scale-105"
+            >
+              <Image
+                src={blog?.Image_url}
+                alt={blog?.Title}
+                width={600}
+                height={400}
+                className="w-full h-60 object-cover"
+              />
+              <div className="p-4">
+                <h2 className="text-xl font-semibold">{blog?.Title}</h2>
+                <p className="text-gray-600 mt-2">{blog?.Description}</p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))
+        ) : (
+          <p className="text-center text-gray-500">Loading blogs...</p>
+        )}
       </div>
     </div>
   );

@@ -15,18 +15,18 @@ const Services: React.FC = () => {
     <div className="space-y-20">
       {/* Hero Section */}
       <section
-        className="relative h-[50vh] bg-cover bg-center"
+        className="relative h-[50vh] md:h-[60vh] bg-cover bg-center flex items-center justify-center"
         style={{
           backgroundImage:
             "url('/service-img/banner2.jpeg')",
         }}
       >
         <div className="flex items-center justify-center h-full bg-black bg-opacity-70">
-          <div className="w-2/3 mx-auto text-white">
-            <h1 className="text-5xl font-semibold">
+          <div className="w-full px-6 md:px-12 lg:w-2/3 text-center md:text-left text-white py-10 md:py-16">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold leading-snug">
               Modern IT and Digital Services for Business Growth
             </h1>
-            <p className="mt-4 text-lg">
+            <p className="mt-4 text-base sm:text-lg md:text-xl">
               {`We offer cutting-edge IT and digital services designed to propel your business forward. We create a bridge between the new modern AI technologies and customer needs. `}
             </p>
           </div>
@@ -34,7 +34,7 @@ const Services: React.FC = () => {
       </section>
 
       {/* Fourth Section */}
-      <div className="container mx-auto space-y-20">
+      <div className="container mx-auto space-y-20 md:px-0 px-2">
         <EffectiveDigital />
       </div>
 
@@ -95,19 +95,19 @@ const Services: React.FC = () => {
       {/* Third Section */}
       <ComprhensiveIT />
 
-            {/* sevent section  */}
-            <OurProcess />
+      {/* sevent section  */}
+      <OurProcess />
 
       {/* five Section */}
       <WhyChoose />
 
       {/* six section */}
-      <section className="container mx-auto font-body">
-        <h2 className="text-4xl font-semibold mb-6">Client Success Stories</h2>
-        <p className="text-lg text-gray-600 font-[500] font-body mb-10">{`Discover how we've helped businesses like yours achieve remarkable growth and success. Our client testimonials showcase the impact of our services and the value we deliver.`}</p>
+      <section className="container mx-auto px-6 md:px-0 font-body">
+        <h2 className="text-3xl sm:text-4xl font-semibold mb-6 text-center md:text-left">Client Success Stories</h2>
+        <p className="text-base sm:text-lg text-gray-600 font-medium text-center md:text-left mb-10">{`Discover how we've helped businesses like yours achieve remarkable growth and success. Our client testimonials showcase the impact of our services and the value we deliver.`}</p>
 
-        <div className="flex flex-col md:flex-row justify-between items-start w-full">
-          <div className="mr-5 w-[60%]">
+        <div className="flex flex-col-reverse md:flex-row justify-between items-center md:items-start w-full">
+          <div className="w-full md:w-[60%] space-y-6">
             <div className="py-5 mb-5">
               <h4 className="font-semibold text-2xl mb-4">John S. - CEO, Tech Startup</h4>
               <p className="text-lg w-3/4">{`"Their SEO strategies transformed our online presence, driving a 300% increase in organic traffic."`}</p>

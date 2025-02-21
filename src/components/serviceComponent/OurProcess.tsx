@@ -25,7 +25,7 @@ const processSteps = [
 
 const OurProcess = () => {
   return (
-    <section className="container mx-auto my-10 font-body">
+    <section className="container mx-auto my-10 font-body px-2 md:px-0">
       <h2 className="text-4xl font-bold mb-6 text-gray-900">Our Process: Delivering Value</h2>
       <p className="text-lg text-gray-600 font-medium mx-auto mb-10">
         We follow a structured approach to ensure that we deliver maximum value to our clients at every stage of the project.

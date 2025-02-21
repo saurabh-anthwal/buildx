@@ -8,7 +8,7 @@ const ContactUs = () => {
   const [isConsultationOpen, setConsultationOpen] = useState(false);
 
   return (
-    <section className="container mx-auto py-16 flex flex-col md:flex-row items-center gap-12 font-body">
+    <section className="container mx-auto py-16 flex flex-col md:flex-row items-center gap-12 font-body px-2 md:px-0">
       {/* Left Section */}
       <div className="w-full md:w-3/5">
         <h2 className="text-4xl font-bold text-gray-900 mb-4">Let’s Connect and Grow Together</h2>

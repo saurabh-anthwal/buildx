@@ -10,7 +10,7 @@ const HeroSection = () => {
             <div className="absolute inset-0 bg-black opacity-70"></div>
 
             {/* Content */}
-            <div className="container mx-auto relative z-10 px-4">
+            <div className="container mx-auto relative px-4">
                 <h1 className="text-6xl font-semibold text-white leading-tight">
                     Syncing Innovation <br /> with Influence
                 </h1>
